@@ -2,9 +2,9 @@
 from time import time
 
 def performance(fn):
-    def wrapper(*args, **kawrgs):
+    def wrapper(*args, **kwargs):
         t1 = time()
-        results = fn(*args, **kawrgs)
+        results = fn(*args, **kwargs)
         t2 = time()
 
         print(f'It took {t2-t1} s')
