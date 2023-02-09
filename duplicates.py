@@ -5,6 +5,7 @@ import pdb
 some_list = ['a', 'b', 'c', 'd', 'a', 's', 'c']
 
 #Function returns character if duplicate present or ''
+#Not used!!!
 def is_duplicate(char):
     count = 0
 
@@ -24,7 +25,8 @@ list = '' #list of duplicates
 
 for i in some_list:
     
-        if is_duplicate(i):
+        if some_list.count(i) > 1:
+
             try:
                 list.index(i)
                 
