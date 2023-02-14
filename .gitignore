@@ -7,3 +7,7 @@
 .idea/inspectionProfiles/profiles_settings.xml
 __pycache__/fileio.cpython-311.pyc
 modules/__pycache__/collections.cpython-36.pyc
+auto-parts*.csv
+
+output_file_1.csv
+output_file_2.csv
