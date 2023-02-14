@@ -1,0 +1,9 @@
+.idea
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/PythonZTM.iml
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
+__pycache__/fileio.cpython-311.pyc
+modules/__pycache__/collections.cpython-36.pyc
