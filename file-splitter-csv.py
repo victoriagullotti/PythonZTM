@@ -1,4 +1,5 @@
 import csv
+import pdb
 
 csv_file = r"C:\Users\Guest1\Desktop\code\PythonZTM\auto-parts.csv"
 
@@ -15,9 +16,11 @@ with open(csv_file, 'r') as input_file:
     # Initialize variables for tracking the current output file and lines written
     current_output_file = None
     lines_written = 0
+    file_num = 0
 
     # Loop through each row
     for row in csv_reader:
+
         # Create a new output file if necessary
         if current_output_file is None or lines_written >= max_lines_per_file:
             
@@ -25,7 +28,7 @@ with open(csv_file, 'r') as input_file:
             if current_output_file is not None:
                 current_output_file.close()
             
-            file_num = lines_written // max_lines_per_file + 1
+            file_num += 1
             current_output_file = open(f'output_file_{file_num}.csv', 'w', newline='')
             csv_writer = csv.writer(current_output_file)
             
