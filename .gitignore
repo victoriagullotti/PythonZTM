@@ -11,3 +11,6 @@ auto-parts*.csv
 
 output_file_1.csv
 output_file_2.csv
+
+env/
+
